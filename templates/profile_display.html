@@ -1,0 +1,34 @@
+{% extends 'dummy.html' %}
+
+
+{% block title %}
+    <title>Pfile Display Page</title>
+{% endblock %}
+
+{% block body_block %}
+    <center>
+
+        <h1>Displaying The Deatils of USer</h1>
+
+        <h2>Username is {{UO.username}}</h2>
+        <h2>Email is {{UO.email}}</h2>
+        <h2>Address of user is {{PO.address}}</h2>
+        <h2>Image of User is</h2>
+
+        <img src="{{PO.profile_pic.url}}" alt="" srcset="" height="300px" width="300px">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </center>
+{% endblock %}
